@@ -1,4 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100);
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
 @import "variables.less";
+
 
 body, html {
     font-family: "Helvetica Neue";
@@ -20,24 +24,28 @@ body {
   font-size: 14px;
 
   .bio-pic {
-    height: 125px;
-    width: 125px;
+    height: 120px;
+    width: 120px;
     margin: 0 auto;
-    background: #777 no-repeat center;
+    background: #eee no-repeat center;
     border-radius: 50%;
     margin-bottom: 20px;
     background-image: ~"url(images/adam-bio.png)";
-    background-size: 150px;
+    background-size: cover;
+    border: solid 4px #eee;
   }
 
   .name {
-    font-size: 22px;
-    margin: 0 auto 20px auto;
-    padding: 0 0 20px 0;
+    font-size: 33px;
+    font-family: "Lato";
+    margin: 0 auto 5px auto;
+    padding: 0;
     position: relative;
+    top: -8px;
+    opacity: .7;
 
     &:after {
-      content: "";
+      // content: "";
       position: absolute;
       bottom: 0px;
       width: 30%;
@@ -48,8 +56,8 @@ body {
   }
 
   p {
-    opacity: .6;
-    margin-bottom: 30px;
+    opacity: .45;
+    margin-bottom: 20px;
   }
 
   .info {
@@ -61,6 +69,31 @@ body {
       margin-bottom: 10px;
       color: #2683c4;
       margin: 0 auto 10px auto;
+      opacity: .8;
+      position: relative;
+      margin-bottom: 26px;
+      transition: opacity .1s ease-out;
+
+      &:hover {
+        opacity: 1;
+      }
+
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        width: 40px;
+        height: 2px;
+        left: ~"calc(50% - 20px)";
+        // border-radius: 50%;
+        background: #DDD;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+
     }
 
     .main-cta {
@@ -68,6 +101,7 @@ body {
       width: 100px;
       background: #2683c4;
       padding: 10px;
+      margin-bottom: 15px;
       border-bottom: solid 2px #1969a1;
 
       &:hover {
