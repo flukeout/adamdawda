@@ -9,12 +9,11 @@ body, html {
 }
 
 body {
-  padding: 40px 30px 40px 30px;
+  padding: 0px 30px 40px 30px;
   position: relative;
 
   &:before {
     position: fixed;
-    // content: "";
     top: 0;
     left: 0;
     right: 0;
@@ -25,13 +24,14 @@ body {
   }
 }
 
-*.bio {
+.bio {
   width: 250px;
   height: 400px;
   position: fixed;
   text-align: center;
   color: #333;
   font-size: 14px;
+  top: 30px;
 
   .bio-pic {
     height: 125px;
@@ -61,10 +61,7 @@ body {
       left: 35%;
       border-bottom: solid 2px #DDD;
     }
-
   }
-
-
 
   .bio-text {
     p {
