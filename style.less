@@ -141,18 +141,21 @@ body {
       margin-bottom: 40px;
       background-size: cover;
 
+      img {
+        width: 100%;
+      }
+
       &:last-child {
         margin-bottom: 0px;
       }
     }
 
     .landscape {
-      height: 400px;
       background-image: ~"url(images/landscape.jpg)";
     }
 
     .portrait {
-      height: 900px;
+
       background-image: ~"url(images/portrait.jpg)";
     }
 
@@ -184,6 +187,10 @@ body {
 
 @media only screen and (max-width: 900px) {
 
+  body {
+    padding: 0;
+  }
+
   .site-wrapper {
     width: 90%;
     padding-top: 30px;
@@ -197,9 +204,6 @@ body {
       top: 30px;
       margin-bottom: 30px;
 
-      .name {
-        font-size: 50px;
-      }
 
     }
 
@@ -212,8 +216,8 @@ body {
 
       a {
         display: inline;
-        margin: 0 14px;
-        font-size: 22px;
+        font-size: 12px;
+        margin: 0 5px;
 
         &:after {
           display: none;
